@@ -19,7 +19,7 @@
             <a class="navbar-brand" href="#home">
                 PRATHAMESH PAWAR
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -118,11 +118,6 @@
                                 <div class="cube-desc">Deployment & Server Management</div>
                             </div>
                         </div>
-                    </div>
-                    <div class="cube-controls">
-                        <!-- <button class="cube-btn" onclick="resetCube()">Reset View</button>
-                        <button class="cube-btn" onclick="toggleAutoRotate()">Auto Rotate</button>
-                        <button class="cube-btn" onclick="rotateToFace('front')">Front View</button> -->
                     </div>
                     <p class="text-center text-gray mt-5">Drag the cube to rotate in any direction</p>
                 </div>
@@ -286,11 +281,10 @@
                                 <span>MySQL</span>
                                 <span>HTML5</span>
                                 <span>CSS3</span>
-                                <span>PHP</span>
-                                <span>Web Hosting</span>
-                                <span>Project Management</span>
                                 <span>JavaScript</span>
                                 <span>Bootstrap</span>
+                                <span>Web Hosting</span>
+                                <span>Project Management</span>
                             </div>
                             <p class="mt-3"><small>Efficiently manages field operations, job assignments, location-based activities, and duty schedules for critical events like festivals, elections, and emergencies.</small></p>
                         </div>
@@ -342,19 +336,19 @@
                     <div class="contact-form">
                         <form id="contactForm">
                             <div class="form-group">
-                                <input type="text" class="form-control" id="name" placeholder=" ">
+                                <input type="text" class="form-control" id="name" placeholder=" " required>
                                 <label for="name" class="form-label">Your Name</label>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" id="email" placeholder=" ">
+                                <input type="email" class="form-control" id="email" placeholder=" " required>
                                 <label for="email" class="form-label">Email Address</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" id="subject" placeholder=" ">
+                                <input type="text" class="form-control" id="subject" placeholder=" " required>
                                 <label for="subject" class="form-label">Subject</label>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" id="message" rows="5" placeholder=" "></textarea>
+                                <textarea class="form-control" id="message" rows="5" placeholder=" " required></textarea>
                                 <label for="message" class="form-label">Your Message</label>
                             </div>
                             <button type="submit" class="btn btn-primary mt-3">Send Message</button>
@@ -373,13 +367,13 @@
                 <p class="text-light">Web Developer | Problem Solver | Tech Innovator</p>
                 
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/prp1999" class="social-icon">
+                    <a href="https://www.linkedin.com/in/prp1999" class="social-icon" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://github.com/Pawar616" class="social-icon">
+                    <a href="https://github.com/Pawar616" class="social-icon" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.instagram.com/avengerfrom616" class="social-icon">
+                    <a href="https://www.instagram.com/avengerfrom616" class="social-icon" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-instagram"></i>   
                     </a>
                     <a href="mailto:prathameshpr616@gmail.com" class="social-icon">
@@ -397,7 +391,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></scrip>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
