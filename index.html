@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prathamesh Pawar | Full Stack Web Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Floating Particles -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                PRATHAMESH PAWAR
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1>Prathamesh Pawar</h1>
+                        <div class="hero-subtitle">Full Stack Web Developer</div>
+                        <p>Results-driven Web Developer with <span class="text-primary">3 years of hands-on experience</span> in building responsive, user-centric websites and applications. Proficient in modern web technologies with a focus on clean code and effective solutions.</p>
+                        
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>Prathameshpr616@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <span>+91 7075827871</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Chh. Sambhajinagar, India 431001</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <a href="#contact" class="btn btn-primary me-3">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cube-container" id="cubeContainer">
+                        <div class="cube" id="cube">
+                            <!-- Front Face - HTML -->
+                            <div class="cube-face cube-front" style="background: linear-gradient(135deg, rgba(228, 77, 38, 0.2), rgba(17, 17, 39, 0.9));">
+                                <i class="fab fa-html5 cube-icon"></i>
+                                <div class="cube-text">HTML5</div>
+                                <div class="cube-desc">Semantic Structure & Accessibility</div>
+                            </div>
+                            <!-- Back Face - CSS -->
+                            <div class="cube-face cube-back" style="background: linear-gradient(135deg, rgba(21, 114, 182, 0.2), rgba(17, 17, 39, 0.9));">
+                                <i class="fab fa-css3-alt cube-icon"></i>
+                                <div class="cube-text">CSS3</div>
+                                <div class="cube-desc">Responsive Design & Animations</div>
+                            </div>
+                            <!-- Right Face - JavaScript -->
+                            <div class="cube-face cube-right" style="background: linear-gradient(135deg, rgba(247, 223, 30, 0.2), rgba(17, 17, 39, 0.9));">
+                                <i class="fab fa-js-square cube-icon"></i>
+                                <div class="cube-text">JavaScript</div>
+                                <div class="cube-desc">Interactive Web Applications</div>
+                            </div>
+                            <!-- Left Face - React -->
+                            <div class="cube-face cube-left" style="background: linear-gradient(135deg, rgba(97, 218, 251, 0.2), rgba(17, 17, 39, 0.9));">
+                                <i class="fab fa-react cube-icon"></i>
+                                <div class="cube-text">React JS</div>
+                                <div class="cube-desc">Component-Based UI Development</div>
+                            </div>
+                            <!-- Top Face - PHP -->
+                            <div class="cube-face cube-top" style="background: linear-gradient(135deg, rgba(119, 123, 180, 0.2), rgba(17, 17, 39, 0.9));">
+                                <i class="fab fa-php cube-icon"></i>
+                                <div class="cube-text">PHP</div>
+                                <div class="cube-desc">Backend Logic & APIs</div>
+                            </div>
+                            <!-- Bottom Face - Web Hosting -->
+                            <div class="cube-face cube-bottom" style="background: linear-gradient(135deg, rgba(0, 119, 255, 0.2), rgba(17, 17, 39, 0.9));">
+                                <i class="fas fa-server cube-icon"></i>
+                                <div class="cube-text">Web Hosting</div>
+                                <div class="cube-desc">Deployment & Server Management</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cube-controls">
+                        <!-- <button class="cube-btn" onclick="resetCube()">Reset View</button>
+                        <button class="cube-btn" onclick="toggleAutoRotate()">Auto Rotate</button>
+                        <button class="cube-btn" onclick="rotateToFace('front')">Front View</button> -->
+                    </div>
+                    <p class="text-center text-gray mt-5">Drag the cube to rotate in any direction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Technical Skills</h2>
+                <p class="text-center text-light mt-3">Technologies & Tools I Master</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5 skill-icon"></i>
+                    <h4>HTML5</h4>
+                    <p>Semantic markup, Accessibility, SEO best practices</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt skill-icon"></i>
+                    <h4>CSS3</h4>
+                    <p>Responsive design, Flexbox, Grid, Animations</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js-square skill-icon"></i>
+                    <h4>JavaScript</h4>
+                    <p>ES6+, DOM Manipulation, Async Programming</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react skill-icon"></i>
+                    <h4>React JS</h4>
+                    <p>Components, Hooks, State Management</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-php skill-icon"></i>
+                    <h4>PHP</h4>
+                    <p>Backend logic, Database integration, APIs</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h4>MySQL</h4>
+                    <p>Database design, Queries, Optimization</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-bootstrap skill-icon"></i>
+                    <h4>Bootstrap</h4>
+                    <p>Rapid prototyping, Responsive layouts</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git-alt skill-icon"></i>
+                    <h4>Git & GitHub</h4>
+                    <p>Version control, Collaboration, Deployment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Work Experience</h2>
+                <p class="text-center text-light mt-3">My Professional Journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">AUG 2023 - Current</span>
+                        <h3>Web Developer</h3>
+                        <h4 class="text-primary">Digispect Technologies PVT. Limited</h4>
+                        <ul class="mt-3">
+                            <li>Developed and maintained responsive websites and web applications</li>
+                            <li>Created dynamic user interfaces using React.js, Bootstrap, HTML, CSS</li>
+                            <li>Handled back-end development with PHP and MySQL</li>
+                            <li>Managed website deployment using cPanel and hosting platforms</li>
+                            <li>Utilized Git for version control and collaboration</li>
+                        </ul>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="timeline-date">MAR 2022 - AUG 2023</span>
+                        <h3>Junior Developer</h3>
+                        <h4 class="text-primary">KSJ Technologies</h4>
+                        <ul class="mt-3">
+                            <li>Learned and applied React.js fundamentals for component development</li>
+                            <li>Built responsive layouts with HTML5, CSS3, and Bootstrap</li>
+                            <li>Implemented interactivity using jQuery and JavaScript</li>
+                            <li>Assisted in performance optimization and page load improvements</li>
+                            <li>Gained experience with Agile workflows and Git processes</li>
+                        </ul>
+                        <div class="timeline-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Projects</h2>
+                <p class="text-center text-light mt-3">Real-world Applications I've Built</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <img src="./img/Lafay.png" class="project-img" alt="LaFay Living">
+                        <div class="project-content">
+                            <h3>LaFay Living Website</h3>
+                            <p class="text-gray">Dec 2025 to Present (Full Time)</p>
+                            <p>Minimalist e-commerce website for experiential powder candles and home décor brand.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                                <span>PHP</span>
+                                <span>Web Hosting</span>
+                                <span>Project Management</span>
+                                <span>MySQL</span>
+                            </div>
+                            <p class="mt-3"><small>Translates brand philosophy of "slower, softer, and more human" moments into digital experience with immersive product showcase and serene aesthetic.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <img src="./img/ASI.png" class="project-img" alt="ASI Aurangabad">
+                        <div class="project-content">
+                            <h3>ASI Archaeological Survey of India</h3>
+                            <p class="text-gray">Aug 2025 to Present (Full Time)</p>
+                            <p>Informative and interactive online platform for Aurangabad Circle community.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                                <span>PHP</span>
+                                <span>Web Hosting</span>
+                                <span>Project Management</span>
+                                <span>MySQL</span>
+                            </div>
+                            <p class="mt-3"><small>Enhanced user engagement and accessibility with centralized portal for residents and visitors to explore resources, contact details, and community updates.</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <img src="./img/police.jpg" class="project-img" alt="Police Duty App">
+                        <div class="project-content">
+                            <h3>Buldhana Police Duty Application</h3>
+                            <p class="text-gray">Oct 2024 to Mar 2025 (Full Time)</p>
+                            <p>Internal web application for Maharashtra Police Department operations management.</p>
+                            <div class="project-tech">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>PHP</span>
+                                <span>Web Hosting</span>
+                                <span>Project Management</span>
+                                <span>JavaScript</span>
+                                <span>Bootstrap</span>
+                            </div>
+                            <p class="mt-3"><small>Efficiently manages field operations, job assignments, location-based activities, and duty schedules for critical events like festivals, elections, and emergencies.</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+                <p class="text-center text-light mt-3">Academic Background</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="education-card">
+                        <i class="fas fa-graduation-cap education-icon"></i>
+                        <h3>Master of Computer Applications (MCA)</h3>
+                        <h4 class="text-primary">BAMU University</h4>
+                        <p class="text-gray">October 2022</p>
+                        <p class="mt-3">Chh. Sambhajinagar (Aurangabad)</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="education-card">
+                        <i class="fas fa-university education-icon"></i>
+                        <h3>Bachelor of Computer Science (BCS)</h3>
+                        <h4 class="text-primary">BAMU University</h4>
+                        <p class="text-gray">August 2020</p>
+                        <p class="mt-3">Chh. Sambhajinagar (Aurangabad)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <p class="text-center text-light mt-3">Let's Build Something Amazing Together</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" placeholder=" ">
+                                <label for="name" class="form-label">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder=" ">
+                                <label for="email" class="form-label">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" placeholder=" ">
+                                <label for="subject" class="form-label">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" rows="5" placeholder=" "></textarea>
+                                <label for="message" class="form-label">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="logo-large">Prathamesh Pawar</h2>
+                <p class="text-light">Web Developer | Problem Solver | Tech Innovator</p>
+                
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/prp1999" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/Pawar616" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/avengerfrom616" class="social-icon">
+                        <i class="fab fa-instagram"></i>   
+                    </a>
+                    <a href="mailto:prathameshpr616@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-gray"><i>I confirm that all information provided is accurate to the best of my knowledge.</i></p>
+                </div>
+                
+                <p class="mt-4 text-gray">© 2026 Prathamesh Pawar.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></scrip>
+    <script src="./js/script.js"></script>
+</body>
+</html>
